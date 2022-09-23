@@ -1,0 +1,173 @@
+/* universal style */
+body {
+    font-size: 16px;
+    font-family: 'Roboto Mono';
+    margin: 1rem 1rem;
+}
+
+/* header style */
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h4 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0.5rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .navbar {
+        display: none;
+    }
+}
+/* welcome style */
+.welcome-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60rem;
+    background-image: url('./Images/lego-border.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+/* about style */
+#about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 2rem;
+}
+
+.kc-image img {
+    width: 25rem;
+    height: 28rem;
+}
+
+.kc-bio h3 {
+    font-size: 1.5rem;
+}
+
+.kc-bio h2 {
+    font-size: 1.75rem;
+}
+
+.kc-bio p {
+    font-size: 1.15rem;
+}
+
+@media only screen and (max-width: 760px) {
+    #about {
+        display: flex;
+        flex-flow: column-reverse wrap;
+    }
+}
+
+/* events style */
+#events {
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+    text-align: center;
+}
+
+.event-types {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: left;
+}
+
+.event-1 {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.event-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+}
+
+.event-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+
+}
+
+.event-types h4, p {
+    margin: .25rem;
+}
+
+.event-types img {
+    height: 15rem;
+    width: 15rem;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .event-types {
+        display: flex;
+        flex-flow: column wrap;
+    } 
+
+    .event-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .event-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .event-3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .event-types img {
+        display: none;
+    }
+}
+
+/* contact style */
+#contact {
+    text-align: center;
+}
+
+/* footer style */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 1rem;
+}
